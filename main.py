@@ -1,18 +1,44 @@
-
+import os
 from pypresence import Presence
 import time
 
-mm = """
 
-1. With Time Elapsed
+os.system("cls")
 
-2. Without Time Elapsed
+BAN = """
 
-3. One Button
+                                  
+           ,-.----.               
+,-.----.   \    /  \    ,----..   
+\    /  \  |   :    \  /   /   \  
+;   :    \ |   |  .\ :|   :     : 
+|   | .\ : .   :  |: |.   |  ;. / 
+.   : |: | |   |   \ :.   ; /--`  
+|   |  \ : |   : .   /;   | ;     
+|   : .  / ;   | |`-' |   : |     
+;   | |  \ |   | ;    .   | '___  
+|   | ;\  \:   ' |    '   ; : .'| 
+:   ' | \.':   : :    '   | '/  : 
+:   : :-'  |   | :    |   :    /  
+|   |.'    `---'.|     \   \ .'   
+`---'        `---`      `---`     
+                                  
+                                  
+"""                                  
 
-4. Two Buttons
+opt =  int(input("Type a number (enter if you dont want) : "))
 
-"""
+state = input("Type in something for the state (enter if you dont want) : ")
+
+os.system("cls")
+
+details = input("Type in something for the details (enter if you dont want) : ")
+
+os.system("cls)
+
+image = input("Type in link for the image (enter if you dont want) : ")
+
+
 
 client = int(input("Paste Your Client ID here"))
 client_id = (client)  # Fake ID, put your real one here
@@ -20,4 +46,4 @@ RPC = Presence(client_id)  # Initialize the client class
 RPC.connect() # Start the handshake loop
 
 start_time=time.time() 
-RPC.update(state="", details="By unofficialdxnny", large_image="https://imgur.com/FtuQIfw.jpg", buttons=[{"label": "unofficialdxnny", "url": "https://github.com/unofficialdxnny/"}, {"label": "unofficialdxnny Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
+RPC.update(state=state, details=details, large_image=image, buttons=[{"label": "unofficialdxnny", "url": "https://github.com/unofficialdxnny/"}, {"label": "unofficialdxnny Server", "url": "https://discord.gg/jm2BFbqb8h"}], start=start_time)
