@@ -20,6 +20,7 @@ RPC.update(state="", details="By unofficialdxnny", large_image="https://imgur.co
 
 - Clone the repo
 - cd simple-discord-rpc
+- pip install pypresence
 - python main.py
 
 ## Uage
