@@ -21,3 +21,7 @@ RPC.update(state="", details="By unofficialdxnny", large_image="https://imgur.co
 - Clone the repo
 - cd simple-discord-rpc
 - python main.py
+
+## Uage
+
+Follow the terminal
