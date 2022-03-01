@@ -2,7 +2,20 @@
 from pypresence import Presence
 import time
 
-client_id = '1234567890'  # Fake ID, put your real one here
+mm = """
+
+1. With Time Elapsed
+
+2. Without Time Elapsed
+
+3. One Button
+
+4. Two Buttons
+
+"""
+
+client = int(input("Paste Your Client ID here"))
+client_id = (client)  # Fake ID, put your real one here
 RPC = Presence(client_id)  # Initialize the client class
 RPC.connect() # Start the handshake loop
 
